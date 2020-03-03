@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <section class="d-flex flex-column align-items-center justify-content-center">
+        <h3 class="align-self-center" id="prompt">The World's Trusted Currency Authority!!!</h3>
+        <div class="d-flex flex-row align-items-center input-form">
+            <input type="number" id="amount" />
+            <p class="text-secondary font-weight-bold">From:</p>
+            <select id="from" class="btn-secondary btn-lg btn-lg">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <p class="text-secondary font-weight-bold">To:</p>
+            <select id="to" class="btn-secondary btn-lg btn-lg">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+            </select>
+            <button class="btn btn-secondary btn-lg btn-block m-5 rainbow-bg"><i
+                    class="fa fa-chevron-right fa-3x" onclick="convertAgain()"></i></button>
+
+        </div>
+    </section>
+
+    <div id="result" style="text-align: center; font-size: 50px; font-weight: bold;">
+    </div>
+    <script type="text/javascript" src="main3.js">
+    </script>
+</body>
+
+</html>
